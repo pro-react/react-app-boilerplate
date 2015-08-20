@@ -1,0 +1,20 @@
+{
+  "name": "react-app-boilerplate",
+  "version": "0.1.0",
+  "description": "React application boilerplate",
+  "author": "Cássio Zen",
+  "license": "ISC",
+  "scripts": {
+    "start": "node_modules/.bin/webpack-dev-server --content-base public --devtool cheap-module-eval-source-map --colors --history-api-fallback --hot --inline --progress"
+  },
+
+  "devDependencies": {
+    "babel-core": "^5.8.*",
+    "babel-loader": "^5.3.*",
+    "webpack": "^1.11.*",
+    "webpack-dev-server": "^1.10.*"
+  },
+  "dependencies": {
+    "react": "^0.13.*"
+  }
+}
