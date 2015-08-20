@@ -5,7 +5,7 @@ Quickstart project template for building React applications.
 
 ### Objective
 
-This boilerplate is purposefully simple to show the minimal configuration create React Applications. Since it's main use is for learning React, it is opinionated to create a better developer experience over performance.
+This boilerplate is purposefully simple to show the minimal setup needed to create React Applications. Since its main usage is for React learning, it is opinionated to create a better developer experience over build speed.
 
 ### Usage
 
@@ -14,7 +14,7 @@ npm install
 npm start
 ```
 
-Open the URL http://localhost:8080 on your browser.
+Open http://localhost:8080 in your browser.
 
 Now edit `app/App.js`.  
 
