@@ -18,5 +18,18 @@ module.exports = {
       loaders: ['babel'],
       include: path.join(__dirname, 'app')
     }]
-  }
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin()
+  ],
+  devtool: 'eval-source-map',
+  devServer: {
+    contentBase: "./public",
+    colors: true,
+    historyApiFallback: true,
+    hot: true,
+    inline: true,
+    progress: false,
+  },
 };

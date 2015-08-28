@@ -5,7 +5,7 @@
   "author": "Cássio Zen",
   "license": "ISC",
   "scripts": {
-    "start": "node_modules/.bin/webpack-dev-server --content-base public --devtool eval-source-map --colors --history-api-fallback --hot --inline --progress"
+    "start": "node_modules/.bin/webpack-dev-server --progress"
   },
 
   "devDependencies": {
