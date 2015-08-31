@@ -3,7 +3,7 @@ var webpack = require('webpack');
 
 module.exports = {
   entry: [
-    './app/App'
+    './app/main.js'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
@@ -17,6 +17,9 @@ module.exports = {
       test: /\.jsx?$/,
       loaders: ['babel'],
       include: path.join(__dirname, 'app')
+    },{
+      test: /\.css$/,
+      loader: 'style!css'
     }]
   },
   plugins: [
