@@ -6,7 +6,7 @@ module.exports = {
     './app/App.js'
   ],
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'public'),
     filename: 'bundle.js'
   },
   resolve: {
@@ -17,9 +17,6 @@ module.exports = {
       test: /\.jsx?$/,
       loaders: ['babel'],
       include: path.join(__dirname, 'app')
-    },{
-      test: /\.css$/,
-      loader: 'style!css'
     }]
   },
   plugins: [
