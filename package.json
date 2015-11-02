@@ -1,6 +1,6 @@
 {
   "name": "react-app-boilerplate",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "React application boilerplate",
   "author": "Cássio Zen",
   "license": "ISC",
@@ -8,13 +8,15 @@
     "start": "node_modules/.bin/webpack-dev-server --progress"
   },
   "devDependencies": {
-    "babel-core": "~5.8.*",
-    "babel-loader": "~5.3.*",
+    "babel-core": "~6.0.*",
+    "babel-loader": "~6.0.*",
+    "babel-preset-es2015": "~6.0.*",
+    "babel-preset-react": "~6.0.*",
     "webpack": "~1.12.*",
     "webpack-dev-server": "~1.12.*"
   },
   "dependencies": {
-    "react": "~0.14.0",
-    "react-dom": "~0.14.0"
+    "react": "~0.14.*",
+    "react-dom": "~0.14.*"
   }
 }

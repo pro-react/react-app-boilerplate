@@ -15,8 +15,11 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.jsx?$/,
-      loaders: ['babel'],
-      include: path.join(__dirname, 'app')
+      include: path.join(__dirname, 'app'),
+      loader: 'babel',
+      query: {
+        presets: ['es2015','react']
+      }
     }]
   },
   plugins: [

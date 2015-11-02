@@ -1,1 +1,1 @@
-import './main.css';import React, { Component } from 'react';class App extends Component {  render(){    return (      <h1>Hello World</h1>    );  }}React.render(<App />, document.getElementById('root'));
+import React, { Component } from 'react';import {render} from 'react-dom';class App extends Component {  render(){    return (      <h1>Hello World</h1>    );  }}render(<App />, document.getElementById('root'));

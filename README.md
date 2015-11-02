@@ -20,7 +20,7 @@ Now edit `app/App.js`.
 
 ### Dependencies
 
-* React
-* Webpack
-* webpack-dev-server
-* babel-loader
+* React & React-DOM
+* Webpack & webpack-dev-server
+* Babel Core
+* Babel Loader (With "es2015" and "react" presets)
