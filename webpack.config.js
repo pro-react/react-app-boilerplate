@@ -1,6 +1,10 @@
 var webpack = require('webpack');
 
-module.exports = {
+/*
+ * Default webpack configuration for development
+ */
+var config = {
+  devtool: 'eval-source-map',
   context: __dirname + "/app",
   entry: "./App.js",
   output: {
@@ -10,7 +14,7 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.jsx?$/,
-      include: __dirname + "/app",
+      exclude: /node_modules/,
       loader: 'babel',
       query: {
         presets: ['es2015','react']
@@ -18,9 +22,8 @@ module.exports = {
     }]
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
   ],
-  devtool: 'eval-source-map',
   devServer: {
     contentBase: "./public",
     colors: true,
@@ -30,3 +33,20 @@ module.exports = {
     progress: false,
   },
 }
+
+/*
+ * If bundling for production, optimize output
+ */
+if (process.env.NODE_ENV === 'production') {
+  config.devtool = false;
+  config.plugins = config.plugins.concat([
+    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.optimize.UglifyJsPlugin({comments: false}),
+    new webpack.DefinePlugin({
+      'process.env': {NODE_ENV: JSON.stringify('production')}
+    })
+  ]);
+};
+
+module.exports = config;
