@@ -7,7 +7,6 @@ Quickstart project template for learning React.
 
 This boilerplate is purposefully simple to show the minimal setup needed to create React projects with Webpack and Babel. It aims to be a starting point for learning React and as such avoids advanced configurations while providing a solid foundation for new React projects.
 
-
 ### Usage
 **Clone this repository**
 ```
@@ -26,13 +25,15 @@ npm start
 
 Open http://localhost:8080 in your browser.
 
-Now edit `app/App.js`.
-
+Static files are served from the `public` folder, project JavaScript files are bundled from the `app` folder.
 
 **When ready, build for production**
 ```
 npm run build
 ```
+
+This will generate a minimized bundle.js file on the `public` folder.
+
 
 ### Dependencies
 
