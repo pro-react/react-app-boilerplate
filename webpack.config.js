@@ -5,8 +5,7 @@ var webpack = require('webpack');
  */
 var config = {
   devtool: 'eval-source-map',
-  context: __dirname + "/app",
-  entry: "./App.js",
+  entry:  __dirname + "/app/App.js",
   output: {
     path: __dirname + "/public",
     filename: "bundle.js"
@@ -22,15 +21,14 @@ var config = {
     }]
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
+    new webpack.HotModuleReplacementPlugin()
   ],
   devServer: {
     contentBase: "./public",
     colors: true,
     historyApiFallback: true,
     hot: true,
-    inline: true,
-    progress: false,
+    inline: true
   },
 }
 
@@ -40,7 +38,6 @@ var config = {
 if (process.env.NODE_ENV === 'production') {
   config.devtool = false;
   config.plugins = config.plugins.concat([
-    new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({comments: false}),
     new webpack.DefinePlugin({
