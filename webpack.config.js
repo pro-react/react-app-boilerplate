@@ -1,21 +1,16 @@
-var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-  entry: [
-    './app/App.js'
-  ],
+  context: __dirname + "/app",
+  entry: "./App.js",
   output: {
-    path: path.join(__dirname, 'public'),
-    filename: 'bundle.js'
-  },
-  resolve: {
-    extensions: ['', '.js', '.jsx']
+    path: __dirname + "/public",
+    filename: "bundle.js"
   },
   module: {
     loaders: [{
       test: /\.jsx?$/,
-      include: path.join(__dirname, 'app'),
+      include: __dirname + "/app",
       loader: 'babel',
       query: {
         presets: ['es2015','react']
@@ -23,8 +18,7 @@ module.exports = {
     }]
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.HotModuleReplacementPlugin()
   ],
   devtool: 'eval-source-map',
   devServer: {
@@ -35,4 +29,4 @@ module.exports = {
     inline: true,
     progress: false,
   },
-};
+}

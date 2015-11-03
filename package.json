@@ -5,7 +5,8 @@
   "author": "Cássio Zen",
   "license": "ISC",
   "scripts": {
-    "start": "node_modules/.bin/webpack-dev-server --progress"
+    "start": "node_modules/.bin/webpack-dev-server --progress",
+    "build": "NODE_ENV=production webpack -p --progress --colors"
   },
   "devDependencies": {
     "babel-core": "~6.0.*",
