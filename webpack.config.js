@@ -20,14 +20,10 @@ var config = {
       }
     }]
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin()
-  ],
   devServer: {
     contentBase: "./public",
     colors: true,
     historyApiFallback: true,
-    hot: true,
     inline: true
   },
 }
