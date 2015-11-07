@@ -35,6 +35,11 @@ npm run build
 This will generate a minimized bundle.js file on the `public` folder.
 
 
+### Missing Features
+
+This boilerplate focuses solely on transforming and bundling javascript files - all other static files are served directly from the public folder without any processing. While useful for learning React, this setup doesn't use Webpack and Babel in their full capabilities - which include transforming and bundling projects assets (such as stylesheets), modularizing CSS, hot reloading and etc. Please refer to [Webpack](//webpack.github.io) and [Babel](//babeljs.io) docs to learn more. If you are looking for a feature-rich bootstrap for React, take a look at [webpack-express-boilerplate by christianalfoni](//github.com/christianalfoni/webpack-express-boilerplate).
+
+
 ### Dependencies
 
 * React & React-DOM
