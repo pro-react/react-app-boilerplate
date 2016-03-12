@@ -1,0 +1,1 @@
+import React, { Component } from 'react';import {render} from 'react-dom';import Hello from './Components/Hello/Hello'class App extends Component {  render(){    return (      <Hello title="ReactJS" description="Welcome to ReactJS Boilerplate App." />    );  }}render(<App />, document.getElementById('root'));
