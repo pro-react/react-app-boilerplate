@@ -5,16 +5,21 @@ var webpack = require('webpack');
  */
 var config = {
   devtool: 'eval-source-map',
-  entry:  __dirname + "/app/App.js",
+  entry:  __dirname + "/app/App.jsx",
   output: {
     path: __dirname + "/public",
     filename: "bundle.js"
+  },
+  resolve: {
+    extensions: ["", ".jsx", ".js"],
+    modulesDirectories: ["js", "node_modules"]
   },
   module: {
     loaders: [{
       test: /\.jsx?$/,
       exclude: /node_modules/,
       loader: 'babel',
+      cacheDirectory: true,
       query: {
         presets: ['es2015','react']
       }

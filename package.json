@@ -2,7 +2,7 @@
   "name": "react-app-boilerplate",
   "version": "0.1.3",
   "description": "React application boilerplate",
-  "author": "Cássio Zen",
+  "author": "Cássio Zen, Roberto Mauro<erremauro@icloud.com>",
   "license": "ISC",
   "scripts": {
     "start": "node_modules/.bin/webpack-dev-server --progress",
