@@ -1,3 +1,28 @@
+Important Update
+================
+
+Facebook released a tool to create React Apps with no need for configurations or boilerplates. If you're just begining to learn React, you might want to use create-react-app instead of using this boilerplate project.
+
+```sh
+npm install -g create-react-app
+
+create-react-app my-app
+cd my-app/
+npm start
+
+```
+
+Then open [http://localhost:3000/](http://localhost:3000/) to see your app.<br>
+When you’re ready to deploy to production, create a minified bundle with `npm run build`.
+
+<img src='https://camo.githubusercontent.com/506a5a0a33aebed2bf0d24d3999af7f582b31808/687474703a2f2f692e696d6775722e636f6d2f616d794e66434e2e706e67' width='600' alt='npm start'>
+
+For more information on create-react-app, take a look at [Dan Abramov's blog post ](https://facebook.github.io/react/blog/2016/07/22/create-apps-with-no-configuration.html) and the [Github repository](https://github.com/facebookincubator/create-react-app)
+
+Behind the scenes, create-react-app uses Webpack and Babel. 
+
+You might still want to use this boilerplate if you want to see how Webpack and Babel can be manually configured in a project.
+
 React App Boilerplate
 =====================
 
